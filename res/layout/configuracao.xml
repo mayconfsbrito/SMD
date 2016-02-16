@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipServ" />
+
+    <EditText
+        android:id="@+id/etIp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv1"
+        android:ems="3"
+        android:inputType="number"
+        android:maxLength="3" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etIp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etIp1"
+        android:layout_alignBaseline="@+id/etIp1"
+        android:ems="3"
+        android:inputType="number"
+        android:maxLength="3" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etIp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etIp2"
+        android:layout_alignBaseline="@+id/etIp1"
+        android:ems="3"
+        android:inputType="number"
+        android:maxLength="3" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etIp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etIp3"
+        android:layout_alignBaseline="@+id/etIp1"
+        android:ems="3"
+        android:inputType="number"
+        android:maxLength="3" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etIp1"
+        android:text="@string/porta" />
+
+    <EditText
+        android:id="@+id/etPorta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv2"
+        android:ems="5"
+        android:inputType="number"
+        android:maxLength="5" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPorta"
+        android:text="@string/codMunSinc" />
+    <EditText
+        android:id="@+id/etCodMun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:ems="7"
+        android:maxLength="7"
+        android:inputType="number"/>
+        
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCodMun"
+        android:layout_centerHorizontal="true" >
+        <Button
+            android:id="@+id/btOk"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="@string/Ok" />
+
+        <Button
+            android:id="@+id/btRest"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btOk"
+            android:text="@string/restaurar" />
+    </RelativeLayout>
+
+</RelativeLayout>

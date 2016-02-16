@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ufop.smd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity android:name="ufop.smd.gui.activity.ActivityLogin" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><activity android:name=".gui.activity.Sincronizacao" android:label="@string/sinc">
+        </activity><activity android:name="ufop.smd.testes.MainActivity" android:label="@string/app_nameTeste">
+        </activity>
+        
+        
+        <activity
+            android:name=".gui.activity.BoletimTratamentoListagem"
+            android:label="@string/bolsTra" >
+        </activity>
+        <activity
+            android:name=".gui.activity.BoletimPesquisaListagem"
+            android:label="@string/bolsPes" >
+        </activity>
+        <activity
+            android:name=".gui.activity.Opcoes"
+            android:label="@string/op" >
+        </activity>
+        <activity
+            android:name=".gui.activity.LocalidadeCroqui"
+            android:label="@string/locCro" >
+        </activity>
+        <activity
+            android:name=".gui.activity.BoletimTratamentoVisualizar"
+            android:label="@string/bolTra" >
+        </activity>
+        <activity
+            android:name=".gui.activity.BoletimPesquisaVisualizar"
+            android:label="@string/bolPes" >
+        </activity>
+        <activity
+            android:name=".gui.activity.Croqui"
+            android:label="@string/cro" >
+        </activity>
+        <activity
+            android:name=".gui.activity.VisitaTratamentoListagem"
+            android:label="@string/visTra" >
+        </activity>
+        <activity
+            android:name=".gui.activity.VisitaTratamentoVisualizar"
+            android:label="@string/viTra" >
+        </activity>
+        <activity
+            android:name=".gui.activity.VisitaPesquisaListagem"
+            android:label="@string/visPes" >
+        </activity>
+        <activity
+            android:name=".gui.activity.VisitaPesquisaVisualizar"
+            android:label="@string/viPes" >
+        </activity>
+        <activity
+            android:name=".gui.activity.ListagemGenerica"
+            android:label="@string/buscar" >
+        </activity>
+        <activity
+            android:name=".gui.activity.Configuracao"
+            android:label="@string/conf">
+        </activity>
+        
+    </application>
+
+</manifest>

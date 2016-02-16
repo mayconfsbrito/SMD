@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aplicação -->
+    <string name="hello">Hello World, SMDActivity!</string>
+    <string name="app_name">SMD</string>
+    <string name="teste">Teste</string>
+    <string name="app_nameTeste">Smd_Testes</string>
+    <string name="limpar">Limpar</string>
+    <string name="cad">Cadastrar</string>
+    <string name="cadAlt">Cadastrar/Alterar</string>
+    <string name="alterar">Alterar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="sincUsuarios">Sincronizar Usuários</string>
+    <string name="Ok">Ok</string>
+    <string name="bemVindo">Seja Bem-Vindo!</string>
+    <string name="visCroqui">Visualizar Croqui</string>
+    <string name="defLocCroqui">Defina a Localidade do Croqui:</string>
+    <string name="sel">Selecione</string>
+    <string name="op">Opções</string>
+    <string name="verLoc">Verificar Localidade</string>
+    <string name="verMun">Verificar Município</string>
+    <string name="verAge">Verificar Agente</string>
+    <string name="verGrs">Verificar Grs</string>
+    <string name="locCro">Localidade do Croqui</string>
+    <string name="buscar">Buscar</string>
+    <string name="sinc">Sincronizar</string>
+    <string name="sincBol">Sincronizar Apenas Boletins</string>
+	<string name="sincTudo">Sincronizar Tudo</string>
+	<string name="logSinc">Log de Sincronização:</string>
+	<string name="conf">Configurações</string>
+	<string name="porta">Porta:</string>
+	<string name="ipServ">Ip do Servidor:</string>
+	<string name="restaurar">Restaurar</string>
+	<string name="codMunSinc">Código do Município para Sincronização:</string>
+	
+    <!-- Objetos -->
+    <string name="bolsTra">Boletins de Tratamento</string>
+    <string name="bolsPes">Boletins de Pesquisa</string>
+    <string name="bolTra">Boletim de Tratamento</string>
+    <string name="bolPes">Boletim de Pesquisa</string>
+    <string name="visTra">Visitas de Tratamento</string>
+    <string name="visPes">Visitas de Pesquisa</string>
+    <string name="viTra">Visita de Tratamento</string>
+    <string name="viPes">Visita de Pesquisa</string>
+    <string name="visitas">Visitas</string>
+    <string name="mun">Municipio</string>
+    <string name="loc">Localidade</string>
+    <string name="qua">Quadra</string>
+    <string name="log">Logradouro</string>
+    <string name="imo">Imóvel</string>
+    <string name="cro">Croqui</string>
+    <string name="age">Agente</string>
+
+    <!-- Atributos -->
+    <string name="login">Login:</string>
+    <string name="senha">Senha:</string>
+    <string name="cod">Código:</string>
+    <string name="nome">Nome:</string>
+    <string name="adul">Adulticida</string>
+    <string name="larv">Larvicida</string>
+    <string name="pend">Pendências</string>
+    <string name="tipUn">Tipo Unidade</string>
+    <string name="depTra">Depósitos Tratados</string>
+    <string name="depIns">Depósitos Inspecionados</string>
+    <string name="ultVisBol">Última Visita do Boletim</string>
+    <string name="quaConc">Quadra concluída</string>
+    <string name="semEpid">Semana Epid.</string>
+    <string name="nAtiv">Nº Atividade</string>
+    <string name="cat">Categoria</string>
+    <string name="sede">Sede</string>
+    <string name="outros">Outros</string>
+    <string name="tpAtiv">Tipo Atividade</string>
+    <string name="arm">A.R.M.</string>
+    <string name="pe">P.E.</string>
+    <string name="pve">P.V.E.</string>
+    <string name="df">D.F.</string>
+    <string name="idBol">Id Boletim</string>
+    <string name="idVis">Id Visita</string>
+    <string name="turma">Turma</string>
+    <string name="data">Data</string>
+    <string name="grs">Grs</string>
+    <string name="codMun">Código Município:</string>
+    <string name="codLoc">Código Localidade:</string>
+    <string name="nomeMun">Nome Município:</string>
+    <string name="nomeLoc">Nome Localidade:</string>
+    <string name="coordReg">Cord. Regional:</string>
+    <string name="hora">Hora</string>
+    <string name="liAmostra">Li Amostra</string>
+    <string name="nTub">Nº Tubitos</string>
+    <string name="nAmo">Nº Amostra</string>
+    <string name="aeg">Aedes Aegypti</string>
+    <string name="alb">Aedes Albopictus</string>
+    <string name="out">Outros</string>
+
+    <!-- Toast -->
+    <string name="toastSincUsuarios">Sincronizando Usuários</string>
+    <string name="toastServEnc">Servidor Encontrado</string>
+    <string name="toastPreencheLogin">Preencha o login e a senha.</string>
+    <string name="toastUsuInexis">Usuário inexistente ou inativo!</string>
+    <string name="toastSenhaInvalida">Senha Inválida!</string>
+    <string name="toastDescUsuario">Usuário desconectado.</string>
+    <string name="toastErroLogin">Erro ao realizar a conexão com o usuário durante o login!</string>
+
+    <!-- Arrays -->
+    <string-array name="categoria">
+        <item></item>
+        <item>Sede</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="atividadeTratamento">
+        <item></item>
+        <item>T.F.</item>
+        <item>P.E.</item>
+        <item>P.V.E.</item>
+        <item>D.F.</item>
+    </string-array>
+    <string-array name="atividadePesquisa">
+        <item></item>
+        <item>A.R.M.</item>
+        <item>P.E.</item>
+        <item>P.V.E.</item>
+        <item>D.F.</item>
+        <item>L.I.</item>
+    </string-array>
+    <string-array name="adulticida">
+        <item></item>
+        <item>Não Usado</item>
+        <item>Pacote Usado</item>
+        <item>Novo Pacote</item>
+    </string-array>
+    <string-array name="larvicida">
+        <item></item>
+        <item>Não Usado</item>
+        <item>Pacote Usado</item>
+        <item>Novo Pacote</item>
+    </string-array>
+    <string-array name="pendencias">
+        <item></item>
+        <item>Nenhuma</item>
+        <item>Fechada</item>
+        <item>Recusada</item>
+        <item>Resgatada</item>
+    </string-array>
+    <string-array name="tipoUnidade">
+        <item></item>
+        <item>Comercial</item>
+        <item>Ponto Estratégico</item>
+        <item>Outros</item>
+        <item>Residencial</item>
+        <item>Terreno Baldio</item>
+    </string-array>
+    <string-array name="liAmostra">
+        <item></item>
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>100%</item>
+    </string-array>
+
+</resources>

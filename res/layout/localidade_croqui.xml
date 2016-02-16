@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/defLocCroqui"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="@string/codMun" />
+
+    <EditText
+        android:id="@+id/etCodMun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:ems="7"
+        android:maxLength="7"
+        android:editable="false"> 
+     </EditText>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etCodMun"
+        android:text="@string/nomeMun" />
+
+    <EditText
+        android:id="@+id/etNomeMun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:editable="false"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etNomeMun"
+        android:text="@string/codLoc" />
+
+    <EditText
+        android:id="@+id/etCodLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="4"
+        android:maxLength="4"
+        android:inputType="number" > 
+        <requestFocus />
+   	</EditText>
+       
+    <Button
+        android:id="@+id/btVerLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etCodLoc"
+        android:layout_alignBottom="@+id/etCodLoc"
+        android:layout_toRightOf="@+id/etCodLoc"
+        android:text="@string/verLoc" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btVerLoc"
+        android:text="@string/nomeLoc" />
+
+    <EditText
+        android:id="@+id/etNomeLoc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etNomeLoc" >
+
+        <Button
+            android:id="@+id/btVisualizar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/visCroqui" />
+
+        <Button
+            android:id="@+id/btLimpar"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/limpar" />
+    </LinearLayout>
+
+</RelativeLayout>

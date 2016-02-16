@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btSincBol"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/sincBol" />
+    
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSincBol"
+        android:text="@string/logSinc" />
+
+    <EditText
+        android:id="@+id/etLog"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv2"
+        android:ems="10"
+        
+        android:editable="false">
+    </EditText>
+
+    <Button
+        android:id="@+id/btSincTudo"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/tv2"
+        android:layout_alignParentRight="true"
+        android:text="@string/sincTudo" />
+
+</RelativeLayout>

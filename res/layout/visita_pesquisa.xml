@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/qua" />
+        <Button 
+            android:id="@+id/btQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1" 
+            android:text="@string/buscar"/>
+        <EditText
+            android:id="@+id/etQua"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/btQua"
+            android:ems="11" 
+            android:editable="false">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etQua"
+            android:text="@string/log">
+        </TextView>
+        <Button 
+            android:id="@+id/btLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2" 
+            android:text="@string/buscar"/>
+        <EditText
+            android:id="@+id/etLog"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/btLog" 
+            android:editable="false">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etLog"
+            android:text="@string/imo">
+        </TextView>
+        <Button 
+            android:id="@+id/btImo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3" 
+            android:text="@string/buscar"/>
+        <EditText 
+            android:id="@+id/etImo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/btImo"
+            android:editable="false">
+        </EditText>
+            
+        <TextView
+            android:id="@+id/tv31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etImo"
+            android:text="@string/tipUn">
+        </TextView>
+        <Spinner 
+            android:id="@+id/spTipUn"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv31"
+            android:entries="@array/tipoUnidade">
+        </Spinner>
+        
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spTipUn"
+            android:text="@string/nTub">
+        </TextView>
+        <EditText
+            android:id="@+id/etNTub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:ems="2"
+            android:maxLength="2" 
+            android:inputType="number">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etNTub"
+            android:text="@string/nAmo">
+        </TextView>
+        <EditText
+            android:id="@+id/etNAmo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:ems="3"
+            android:maxLength="3"
+            android:enabled="false"
+            android:inputType="number">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tv81"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etNAmo"
+            android:text="@string/depIns">
+        </TextView>
+        <EditText
+            android:id="@+id/etDepIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv81"
+            android:ems="3"
+            android:maxLength="3" 
+            android:inputType="number">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tvQC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etDepIns"
+            android:text="@string/quaConc">
+        </TextView>
+        <CheckBox
+            android:id="@+id/cbQC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvQC">
+        </CheckBox>
+        
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cbQC"
+            android:text="@string/ultVisBol">
+        </TextView>
+        <CheckBox
+            android:id="@+id/cbUltVis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv9">
+        </CheckBox>
+        
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cbUltVis"
+            android:text="@string/idVis">
+        </TextView>
+        <EditText
+            android:id="@+id/etIdVis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv10"
+            android:editable="false"
+            android:ems="10"
+            android:maxLength="10"
+            android:enabled="false">
+        </EditText>
+        
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etIdVis"
+            android:text="@string/idBol">
+        </TextView>
+        <EditText
+            android:id="@+id/etIdBol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv11"
+            android:editable="false"
+            android:ems="10"
+            android:maxLength="10"
+            android:enabled="false">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etIdBol"
+            android:text="@string/hora">
+        </TextView>
+        <EditText
+            android:id="@+id/etHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv12"
+            android:editable="false"
+            android:ems="8"
+            android:maxLength="8"
+            android:enabled="false">
+        </EditText>
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etHora"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/btCadAlt"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="@string/cadAlt" />
+
+            <Button
+                android:id="@+id/btLimpar"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/btCadAlt"
+                android:text="@string/limpar" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btNAmo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etNTub"
+            android:layout_alignBottom="@+id/etNTub"
+            android:layout_toRightOf="@+id/etNTub"
+            android:text="@string/nAmo" />
+        
+    </RelativeLayout>
+
+</ScrollView>
